@@ -1,0 +1,157 @@
+<style>
+    .full-top-nav {
+        background-color: #008c95;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        margin-left: 20px;
+    }
+
+    .dropbtn {
+        color: white;
+        border: none;
+        background: none;
+        padding: 15px 0
+    }
+
+    .dropbtn:hover {
+        background-color: #30a6b9
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #30a6b9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 11;
+        margin-top: -1px;
+    }
+
+    /* A soultion is needed for when you drop your hover to be over the content box and the button hover is removed
+    jquery perhaps????
+    .dropdown-content:hover .dropbtn{
+        background-color: #30a6b9;
+    } */
+
+    .dropdown-content a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 0;
+    }
+
+    .dropdown-content a:hover {
+        color: hotpink;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .top-bar-left {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    .top-bar-right {
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .move-right {
+        margin-right: 5px;
+    }
+
+    .white-hover:hover {
+        color: white;
+    }
+
+    .home-mobile{
+        display: none;
+    }
+
+    .two-em{
+        font-size: 2em;
+    }
+
+    .baby-blue{
+        background-color: #30a6b9
+    }
+
+    @media (max-width: 767px) {
+        .top-bar-right {
+            display: none;
+        }
+        .top-bar-left {
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .home-mobile{
+            display: block;
+        }
+        .home-desktop{
+            display: none;
+        }
+        .dropdown-content{
+            left: -70px;
+        }
+    }
+</style>
+
+<div class="container full-top-nav">
+    <div class="row">
+        <div class="col-sm-6 col-xs-12 top-bar-left">
+            <div class="nav-links">
+                <a class="home-desktop white fteen white-hover" href="/">Home</a>
+                <a class="home-mobile" href="/"><i class="fa fa-home white two-em"></i></a>
+            </div>
+            <div class="dropdown nav-links">
+                <button class="dropbtn fteen">Shop Your Event
+                    <span class="caret"></span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-row">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <a href="#">Link 4</a>
+                        <a href="#">Link 5</a>
+                        <a href="#">Link 6</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <a href="#">Link 7</a>
+                        <a href="#">Link 8</a>
+                        <a href="#">Link 9</a>
+                    </div>
+                    <a href="#">Link 10</a>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a class="white fteen white-hover" href="/">Giveaways</a>
+            </div>
+        </div>
+        <div class="col-sm-6 top-bar-right">
+            <a class="white move-right white-hover" href="/viewcart.jhtm">View Cart
+                <i class="fa fa-shopping-cart white"></i>
+            </a>
+        </div>
+    </div>
+</div>

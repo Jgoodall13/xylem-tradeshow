@@ -1,1 +1,95 @@
-<h1>Xylem Tradeshow</h1>
+<style>
+    .main-header {
+        background-color: #0085ad;
+        height: 65px;
+        ;
+    }
+
+    .xylem-logo {
+        height: 45px;
+        margin-top: 10px;
+    }
+
+    .white {
+        color: white;
+    }
+
+    .fteen {
+        font-size: 15px;
+    }
+
+    .header-right {
+        text-align: right;
+    }
+
+    .contact-text {
+        font-size: 17px;
+        font-weight: 900;
+        margin-bottom: 2px;
+        margin-top: 8px;
+    }
+
+    .head-mail {
+        margin-right: 10px;
+        font-size: 15px
+    }
+
+    .head-phone {
+        font-size: 15px;
+    }
+
+    .head-mail:hover,
+    .head-phone:hover {
+        color: white;
+    }
+
+    .mobile-head-right {
+        display: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 18px;
+    }
+
+
+    @media (max-width: 767px) {
+        .xylem-logo {
+            height: 35px;
+            margin-top: 14px
+        }
+
+        .header-right {
+            display: none;
+        }
+
+        .mobile-head-right {
+            display: block;
+        }
+    }
+</style>
+
+<div class="container-fluid main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-10">
+                <a class="white" href="/">
+                    <img class="xylem-logo" src="/assets/img/xylemshow/xylem_logo.svg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-7 header-right">
+                <p class="white contact-text"> Need to Contact Us?</p>
+                <a class="white head-mail" href="mailto:xylemstore@overturepromo.com">
+                    <i class="fa fa-envelope white"></i> xylemstore@overturepromo.com</a>
+                <a class="white head-phone" href="tel:888-808-9786">
+                    <i class="fa fa-phone white"></i> 888-808-9786</a>
+            </div>
+            <div class="col-xs-2 mobile-head-right">
+                <a class="white head-mail" href="mailto:xylemstore@overturepromo.com">
+                    <i class="fa fa-envelope white"></i>
+                </a>
+                <a class="white head-phone" href="tel:888-808-9786">
+                    <i class="fa fa-phone white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
