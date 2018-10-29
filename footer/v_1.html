@@ -1,4 +1,212 @@
-<h2>Footer</h2>
+<style>
+    #pageSubFooterWrapper {
+        display: none;
+    }
+
+    #sub-footer {
+        background-image: url('assets/img/xylemshow/footer.svg');
+        background-size: cover;
+        height: 72px;
+        margin-top: 25px;
+    }
+
+    .footer-box {
+        background-color: #30a6b9;
+    }
+
+    .copyright {
+        background-color: #008bb3;
+        text-align: center;
+    }
+
+    .copy-text {
+        color: white;
+        font-size: 13px;
+    }
+
+    .footer-header {
+        color: white;
+        font-size: 17px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .footer-text {
+        color: white;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .footer-logo {
+        height: 130px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer-img {
+        height: 60px
+    }
+
+    /* GLOBALS */
+
+    .col-breadcrumb,
+    .category_head_name,
+    #products_wrapper_24 .product_wrapper .product_quick_links,
+    #products_wrapper_24 .product_wrapper .product_sku_wrapper,
+    #floatingPricingSummaryBox #floating_pricingSummary,
+    #product_details_15 .details_desc .addToQuote_btn_wrapper,
+    #product_details_15 .details_desc .addToList_btn_wrapper,
+    .accordion_box:nth-child(2),
+    .accordion_box:nth-child(3) {
+        display: none;
+    }
+
+    #products_wrapper_24 .product_wrapper {
+        border: none;
+        text-align: center;
+    }
+
+    #products_wrapper_24 .product_wrapper .product_price_wrapper .price_title {
+        display: none;
+    }
+
+    #products_wrapper_24 .product_wrapper .product_price_wrapper .price_value {
+        color: #008bb3;
+        font-size: 18px;
+    }
+
+    #product_details_15 .details_image_box {
+        border: none;
+
+    }
+
+    #product_details_15 .accordion_wrapper .accordion_box .accordion_heading .accordion_title a {
+        color: #008bb3;
+        font-size: 18px;
+    }
+
+    #product_details_15 .details_desc .configBox_wrapper .configBox_title.has-icon h3 {
+        background: none;
+        border-bottom: 1px solid #ebebeb;
+        color: #636363;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+    #product_details_15 .details_desc .total_price_wrapper .total_price_title,
+    #product_details_15 .details_desc .total_price_wrapper .total_price_value {
+        color: #008bb3;
+    }
+
+    #product_details_15 .product_name_sku_wrapper .details_product_name h1 {
+        color: #008bb3;
+        font-size: 26px;
+    }
+
+    .table-responsive {
+        margin-left: 50px;
+    }
+
+    .sku_title,
+    .sku_value {
+        color: #636363;
+    }
+
+    #product_details_15 .details_image_box {
+        margin-top: -100px;
+    }
+
+    #product_details_15 .product_name_sku_wrapper {
+        margin-left: 46%;
+    }
+
+    .addToCart_btn {
+        background-image: none;
+        background-color: #008bb3;
+        border: 1px solid #008bb3;
+        color: white;
+        border-radius: 35px;
+        padding: 16px;
+    }
+
+    .addToCart_btn:hover {
+        background-color: #fff;
+        color: #008bb3;
+        border: 1px solid #008bb3;
+    }
+
+    @media(max-width: 997px) {
+        .footer-logo {
+            height: 105px;
+            justify-content: flex-start;
+        }
+    }
+</style>
+<div id="sub-footer">
+
+</div>
+<div class="container-fluid footer-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <h4 class="footer-header">Follow</h4>
+                <ul style="padding: 0">
+                    <li>
+                        <a href="/" target="blank" class="footer-text">
+                            <i class="fa fa-facebook"></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="/" target="blank" class="footer-text">
+                            <i class="fa fa-twitter"></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="/" target="blank" class="footer-text">
+                            <i class="fa fa-linkedin"></i> LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <h4 class="footer-header">Contact Us</h4>
+                <ul style="padding: 0">
+                    <li>
+                        <a href="tel:8888089786" class="footer-text">
+                            <i class="fa fa-phone"></i> 888-808-9786</a>
+                    </li>
+                    <li class="footer-text">
+                        <i class="fa fa-clock-o"></i> 8am - 4pm CST
+                    </li>
+                    <li>
+                        <a href="mailto:xylemstore@overturepromo.com" class="footer-text">
+                            <i class="fa fa-envelope"></i> xylemstore@overturepromo.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <h4 class="footer-header">Legal</h4>
+                <ul style="padding: 0">
+                    <li>
+                        <a href="/" target="blank" class="footer-text">
+                            <i class="fa fa-lock"></i> Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/" target="blank" class="footer-text">
+                            <i class="fa fa-cogs"></i> Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-6 footer-logo">
+                <img src="/assets/img/xylemshow/madewithlove.svg" alt="" class="footer-img">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p class="copy-text">Copyright 2018 Overture, LLC. All rights reserved.</p>
+</div>
 
 <script>
     $(document).ready(function () {
