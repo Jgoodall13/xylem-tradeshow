@@ -13,6 +13,11 @@
         width: 100%
     }
 
+    .hero-mobile{
+        width: 100%;
+        display: none;
+    }
+
     .about-title {
         font-size: 36px;
         color: #0085ad;
@@ -29,23 +34,19 @@
         text-align: center;
     }
 
-    #ahr-pop {
+    #ahr-pop, #nahb-pop {
         display: none;
         position: absolute;
-        top: 80px;
+        top: -40px;
         background: #0085ad;
         color: white;
     }
 
-    #afsa-pop {
-        display: none;
-        position: absolute;
-        top: 120px;
-        background: #0085ad;
-        color: white;
+    #ahr, #nahb{
+        position: relative;
     }
 
-    #ahr:hover {
+    #ahr:hover, #nahb:hover {
         cursor: pointer;
     }
 
@@ -128,6 +129,14 @@
         background-color: #ce5400;
     }
 
+    .put2{
+        background-color: white;
+    }
+
+    .whatt{
+        display: none
+    }
+
     @media(max-width: 991px) {
         .col-md-6.about-right {
             display: none;
@@ -136,6 +145,15 @@
             display: block;
             padding-left: 15px;
             padding-right: 15px;
+        }
+        .cta-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .cta-box-one,
+        .cta-box-two {
+            width: 183px;
+            top: 18%;
         }
     }
 
@@ -149,17 +167,20 @@
             width: 183px;
             top: 18%;
         }
+        .hero-desktop{
+            display: none;
+        }
+        .hero-mobile{
+            display: block;
+        }
     }
 </style>
-
-
-<!-- THESE ARE THE MOBILE MODALS!!! -->
-
 
 <div class="container">
     <div class="row">
         <div class="col-xs-12 hero-row">
             <img class="hero-desktop" src="/assets/img/xylemshow/hero.jpg" alt="">
+            <img class="hero-mobile" src="/assets/img/xylemshow/hero_mobile.jpg" alt="">
         </div>
         <div class="col-md-6">
             <h2 class="about-title">Hello Tradeshow Attendee’s,</h2>
@@ -168,7 +189,7 @@
                 with the date your order will ship by.</p>
             <p class="about-paragraph">If you do not see your show listed, have missed your order deadline, or have any other order questions please
                 email
-                <a href="mailto:xylem@overturepromo.com">xylem@overturepromo.com</a> for assistance.</p>
+                <a href="mailto:xylemstore@overturepromo.com">xylemstore@overturepromo.com</a> for assistance.</p>
             <p class="about-paragraph">We hope you have a great event!</p>
         </div>
         <div class="col-md-6 about-right">
@@ -182,73 +203,25 @@
                 </tr>
                 <tr class="table-row">
                     <td class="table-data center">
-                        <a href="/category/20177/In-Stock.html">AHR</a>
+                        <a href="/category/20177/AHR.html" style="color:#636363">AHR</a>
                     </td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
+                    <td class="table-data">Jan 14-16</td>
+                    <td class="table-data">November 26th</td>
                     <td id="ahr" class="table-data line">Shipment Details
                         <div id="ahr-pop">
-                            I'm a pop up
+                            Shipping Decemeber 20th
                         </div>
                     </td>
                 </tr>
                 <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td id="afsa" class="table-data line">Shipment Details
-                        <div id="afsa-pop">
-                            I'm a pop up
+                    <td class="table-data center">NAHB</td>
+                    <td class="table-data">Feb 19-21</td>
+                    <td class="table-data">November 21st</td>
+                    <td id="nahb" class="table-data line">Shipment Details
+                        <div id="nahb-pop">
+                            Shipping Feburary 4th
                         </div>
                     </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data center">AHR</td>
-                    <td class="table-data">August 1</td>
-                    <td class="table-data">August 30</td>
-                    <td class="table-data line">Shipment Details</td>
                 </tr>
             </table>
         </div>
@@ -259,92 +232,27 @@
                     <th class="table-header">Tradeshow Name</th>
                     <th class="table-header">Show Date</th>
                     <th class="table-header">Order Deadline</th>
-                    <th class="table-header"></th>
+                    <th class="table-header">Ship Date</th>
                 </tr>
                 <tr class="table-row">
                     <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
+                    <td class="table-data">1/14</td>
+                    <td class="table-data">11/26</td>
                     <td class="table-data">
-                        <a href="#ex1" rel="modal:open">
-                            <i class="fa fa-truck"></i>
-                        </a>
+                        <h1 class="whatt">Hi!</h1>
+                        <i class="fa fa-truck duck"></i>
                     </td>
                 </tr>
                 <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-data">AHR</td>
-                    <td class="table-data">8/1</td>
-                    <td class="table-data">8/30</td>
-                    <td class="table-data">
-                        <i class="fa fa-truck"></i>
-                    </td>
+                    <td class="table-data">NAHB</td>
+                    <td class="table-data">2/19</td>
+                    <td class="table-data">11/21</td>
+                    <td class="table-data">2/4</td>
                 </tr>
             </table>
         </div>
+    </div>
+    <div class="row">
         <div class="col-sm-6">
             <img class="promo-img-one" src="/assets/img/xylemshow/promobox1.png" alt="">
             <div class="cta-box-one">
@@ -361,14 +269,25 @@
         </div>
     </div>
 </div>
+<button class="button-blue">Try it!</button>
+<!-- <button class="button-blue" onclick="custom2();">Try it!</button> -->
 
 <script>
+var custom2 = function(){
+        uglipop({class:'put2',source:'html',content:'<h1>This is some Raw Content</h1>This is some Random Raw Content with minimum style'});}
+
     $(document).ready(function () {
         $('#ahr').hover(function () {
             $('#ahr-pop').toggle();
         })
-        $('#afsa').hover(function () {
-            $('#afsa-pop').toggle();
+        $('#nahb').hover(function () {
+            $('#nahb-pop').toggle();
+        })
+        $('.button-blue').on('click', function(){
+            $('.whatt').css('display', 'block')
+        })
+        $('.duck').on('click', function(){
+            $('.whatt').css('display', 'block')
         })
     })
 </script>
