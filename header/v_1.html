@@ -1,4 +1,9 @@
 <style>
+    @font-face {
+        font-family: Avenir;
+        src: url('https://xylemtradeshowstore.overturemarket.com/assets/fonts/AvenirNextLTPro.otf');
+    }
+
     .main-header {
         background-color: #0085ad;
         height: 65px;
@@ -26,6 +31,7 @@
     }
 
     .contact-text {
+        font-family: Avenir;
         font-size: 17px;
         font-weight: 900;
         margin-bottom: 2px;
@@ -56,7 +62,7 @@
 
     @media (max-width: 767px) {
         .xylem-logo {
-            height: 35px;
+            height: 32px;
             margin-top: 14px
         }
 
@@ -67,13 +73,26 @@
         .mobile-head-right {
             display: block;
         }
+        #header-phone, #header-mail {
+            background: #036582;
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
+        .footer-img{
+            height: 49px !important;
+        }
+    }
+    @media (max-width: 320px){
+        .head-mail{
+            margin: 0;
+        }
     }
 </style>
 
 <div class="container-fluid main-header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-xs-10">
+            <div class="col-sm-5 col-xs-9">
                 <a class="white" href="/">
                     <img class="xylem-logo" src="/assets/img/xylemshow/xylem_logo.svg" alt="">
                 </a>
@@ -85,12 +104,12 @@
                 <a class="white head-phone" href="tel:888-808-9786">
                     <i class="fa fa-phone white"></i> 888-808-9786</a>
             </div>
-            <div class="col-xs-2 mobile-head-right">
+            <div class="col-xs-3 mobile-head-right">
                 <a class="white head-mail" href="mailto:xylemstore@overturepromo.com">
-                    <i class="fa fa-envelope white"></i>
+                    <i id="header-mail" class="fa fa-envelope white"></i>
                 </a>
                 <a class="white head-phone" href="tel:888-808-9786">
-                    <i class="fa fa-phone white"></i>
+                    <i id="header-phone" class="fa fa-phone white"></i>
                 </a>
             </div>
         </div>
