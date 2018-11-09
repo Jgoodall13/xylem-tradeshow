@@ -13,7 +13,7 @@
         width: 100%
     }
 
-    .hero-mobile{
+    .hero-mobile {
         width: 100%;
         display: none;
     }
@@ -21,20 +21,24 @@
     .about-title {
         font-size: 36px;
         color: #0085ad;
+        font-family: Avenir-Medium;
     }
 
     .about-paragraph {
         font-size: 15px;
         color: #636363;
+        font-family: Avenir-Medium;
     }
 
     .tradeshow-title {
         font-size: 25px;
         color: #0085ad;
         text-align: center;
+        font-family: Avenir-Black;
     }
 
-    #ahr-pop, #nahb-pop {
+    #ahr-pop,
+    #nahb-pop {
         display: none;
         position: absolute;
         top: -40px;
@@ -42,12 +46,9 @@
         color: white;
     }
 
-    #ahr, #nahb{
+    #ahr,
+    #nahb {
         position: relative;
-    }
-
-    #ahr:hover, #nahb:hover {
-        cursor: pointer;
     }
 
     #mobile-shows {
@@ -70,12 +71,14 @@
         padding: 10px;
         color: #73777c;
         font-size: 15px;
+        font-family: Avenir-Black;
     }
 
     .table-data {
         padding: 10px;
         color: #636363;
         font-size: 15px;
+        font-family: Avenir-Book;
     }
 
     .table-row-head {
@@ -114,6 +117,7 @@
         color: white;
         font-size: 29px;
         margin-bottom: 22px;
+        font-family: Avenir-Medium;
     }
 
     .cta-button {
@@ -122,6 +126,7 @@
         border-radius: 50px;
         padding: 5px 20px;
         font-size: 15px;
+        font-family: Avenir-Black;
     }
 
     .cta-button:hover {
@@ -129,11 +134,11 @@
         background-color: #ce5400;
     }
 
-    .put2{
+    .put2 {
         background-color: white;
     }
 
-    .whatt{
+    .whatt {
         display: none
     }
 
@@ -167,19 +172,21 @@
             width: 183px;
             top: 18%;
         }
-        .hero-desktop{
+        .hero-desktop {
             display: none;
         }
-        .hero-mobile{
+        .hero-mobile {
             display: block;
         }
-        .about-title{
+        .about-title {
             font-size: 25px;
         }
-        .hero-row{
+        .hero-row {
             padding: 10px 15px
         }
     }
+
+
 </style>
 
 <div class="container">
@@ -205,28 +212,22 @@
                     <th class="table-header">Tradeshow Name</th>
                     <th class="table-header">Show Date</th>
                     <th class="table-header">Order Deadline</th>
-                    <th class="table-header"></th>
+                    <th class="table-header">Shipment Details</th>
                 </tr>
                 <tr class="table-row">
                     <td class="table-data center">
                         <a href="/category/20177/AHR.html" style="color:#636363">AHR</a>
                     </td>
                     <td class="table-data">Jan 14-16</td>
-                    <td class="table-data">November 26th</td>
-                    <td id="ahr" class="table-data line">Shipment Details
-                        <div id="ahr-pop">
-                            Shipping Decemeber 20th
-                        </div>
+                    <td class="table-data">Nov 26th</td>
+                    <td id="ahr" class="table-data">Dec 20th
                     </td>
                 </tr>
                 <tr class="table-row">
                     <td class="table-data center">NAHB</td>
                     <td class="table-data">Feb 19-21</td>
-                    <td class="table-data">November 21st</td>
-                    <td id="nahb" class="table-data line">Shipment Details
-                        <div id="nahb-pop">
-                            Shipping Feburary 4th
-                        </div>
+                    <td class="table-data">Jan 12th</td>
+                    <td id="nahb" class="table-data">Feb 4th
                     </td>
                 </tr>
             </table>
@@ -249,7 +250,7 @@
                 <tr class="table-row">
                     <td class="table-data">NAHB</td>
                     <td class="table-data">2/19</td>
-                    <td class="table-data">11/21</td>
+                    <td class="table-data">1/12</td>
                     <td class="table-data">2/4</td>
                 </tr>
             </table>
@@ -276,8 +277,8 @@
 <!-- <button class="button-blue" onclick="custom2();">Try it!</button> -->
 
 <script>
-// var custom2 = function(){
-//         uglipop({class:'put2',source:'html',content:'<h1>This is some Raw Content</h1>This is some Random Raw Content with minimum style'});}
+    // var custom2 = function(){
+    //         uglipop({class:'put2',source:'html',content:'<h1>This is some Raw Content</h1>This is some Random Raw Content with minimum style'});}
 
     $(document).ready(function () {
         $('#ahr').hover(function () {
@@ -286,10 +287,10 @@
         $('#nahb').hover(function () {
             $('#nahb-pop').toggle();
         })
-        $('.button-blue').on('click', function(){
+        $('.button-blue').on('click', function () {
             $('.whatt').css('display', 'block')
         })
-        $('.duck').on('click', function(){
+        $('.duck').on('click', function () {
             $('.whatt').css('display', 'block')
         })
     })

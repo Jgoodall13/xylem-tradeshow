@@ -24,11 +24,13 @@
         font-size: 13px;
         margin: 0;
         padding: 10px;
+        font-family: Avenir-Medium;
     }
 
     .footer-header {
         color: white;
         font-size: 17px;
+        font-family: Avenir-Medium;
     }
 
     li {
@@ -39,6 +41,7 @@
         color: white;
         font-size: 13px;
         line-height: 2;
+        font-family: Avenir-Medium;
     }
 
     .footer-logo {
@@ -201,7 +204,7 @@
                 <ul style="padding: 0">
                     <li>
                         <a href="tel:8888089786" class="footer-text">
-                            <i class="fa fa-phone"></i> 888-808-9786</a>
+                            <i class="fa fa-phone"></i> 224-424-4010</a>
                     </li>
                     <li class="footer-text">
                         <i class="fa fa-clock-o"></i> 8am - 4pm CST
@@ -219,11 +222,11 @@
                 <h4 class="footer-header">Legal</h4>
                 <ul style="padding: 0">
                     <li>
-                        <a href="/" target="blank" class="footer-text">
+                        <a href="/assets/img/xylem/Privacy.pdf" target="blank" class="footer-text">
                             <i class="fa fa-lock"></i> Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="/" target="blank" class="footer-text">
+                        <a href="/assets/img/xylem/Terms.pdf" target="blank" class="footer-text">
                             <i class="fa fa-cogs"></i> Terms of Use</a>
                     </li>
                 </ul>
@@ -240,7 +243,11 @@
 
 <script>
     $(document).ready(function () {
-        $('.dropdown-content').hover(function () {
+        // $('.dropdown-content').hover(function () {
+        //     $('.dropbtn').toggleClass('baby-blue')
+        // })
+        $('.dropbtn').click(function(){
+            $('.dropdown-content').toggle();
             $('.dropbtn').toggleClass('baby-blue')
         })
     })
